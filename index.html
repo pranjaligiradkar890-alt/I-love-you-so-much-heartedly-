@@ -1,0 +1,1489 @@
+# I-love-you-so-much-heartedly-
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>six months of us ♡</title>
+
+<!-- Elegant + handwritten fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Mono:wght@300;400&family=Italianno&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --cream: #fff8ee;
+    --paper: #f8eadb;
+    --pink: #e9a7a7;
+    --rose: #b96f73;
+    --brown: #6f5148;
+    --soft-brown: #92766b;
+    --yellow: #f5df9b;
+    --white: #fffdf9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: "Cormorant Garamond", serif;
+    overflow-x: hidden;
+}
+
+/* --------------------
+   FILM GRAIN
+-------------------- */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: .035;
+
+    background-image:
+    repeating-radial-gradient(
+        circle at 0 0,
+        #000 0,
+        transparent 1px,
+        transparent 3px
+    );
+}
+
+/* --------------------
+   FLOATING HEARTS
+-------------------- */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    z-index: 20;
+
+    color: var(--pink);
+    font-size: 16px;
+
+    animation:
+        floatHeart 8s linear forwards,
+        heartSpin 3s ease-in-out infinite;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .8;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+@keyframes heartSpin {
+
+    0%,100% {
+        rotate: -8deg;
+    }
+
+    50% {
+        rotate: 8deg;
+    }
+}
+
+/* --------------------
+   INTRO
+-------------------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    position: relative;
+
+    background:
+        radial-gradient(circle at 20% 20%, #f8dfd4 0, transparent 30%),
+        radial-gradient(circle at 80% 70%, #f7e8b9 0, transparent 28%),
+        var(--cream);
+}
+
+.hero-content {
+    max-width: 800px;
+
+    animation: heroAppear 1.8s ease forwards;
+}
+
+@keyframes heroAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.eyebrow {
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: var(--soft-brown);
+
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 11vw, 125px);
+
+    line-height: .85;
+
+    font-weight: 400;
+
+    color: var(--brown);
+}
+
+.handwriting {
+    display: block;
+
+    font-family: "Italianno", cursive;
+
+    font-size: clamp(70px, 13vw, 150px);
+
+    color: var(--rose);
+
+    margin-top: 15px;
+}
+
+.hero-text {
+    margin: 40px auto 0;
+
+    max-width: 550px;
+
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    color: var(--soft-brown);
+}
+
+.enter-button {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 15px 28px;
+
+    border-radius: 50px;
+
+    background: var(--white);
+
+    border: 1px solid #e5cfc0;
+
+    color: var(--rose);
+
+    text-decoration: none;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: .4s;
+
+    box-shadow: 0 10px 35px rgba(111,81,72,.08);
+}
+
+.enter-button:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 40px rgba(111,81,72,.15);
+}
+
+/* --------------------
+   SECTIONS
+-------------------- */
+
+section {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 120px 8%;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.section-number {
+    font-family: "DM Mono", monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: var(--rose);
+
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 7vw, 75px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    margin-bottom: 35px;
+}
+
+.text {
+    max-width: 650px;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: var(--soft-brown);
+}
+
+.highlight {
+    color: var(--rose);
+
+    font-style: italic;
+}
+
+/* --------------------
+   MEMORY NOTE
+-------------------- */
+
+.memory-note {
+
+    margin-top: 50px;
+
+    background: var(--white);
+
+    padding: 35px;
+
+    max-width: 650px;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 20px 50px rgba(111,81,72,.08);
+
+    transform: rotate(-1deg);
+
+    position: relative;
+}
+
+.memory-note::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    top: -18px;
+
+    right: 25px;
+
+    font-size: 28px;
+
+    color: var(--pink);
+}
+
+.memory-note small {
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #a98a7e;
+}
+
+.memory-note p {
+
+    margin-top: 15px;
+
+    font-size: 25px;
+
+    line-height: 1.5;
+}
+
+/* --------------------
+   PRIDE SECTION
+-------------------- */
+
+.pride {
+
+    background: #f8eee6;
+}
+
+/* --------------------
+   SUPPORT
+-------------------- */
+
+.support {
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            #f6e7b8,
+            transparent 30%
+        );
+}
+
+/* --------------------
+   QUESTS
+-------------------- */
+
+.quests {
+
+    background: #fffaf2;
+}
+
+.quest {
+
+    background: var(--white);
+
+    border: 1px solid #ead9cb;
+
+    padding: 25px;
+
+    margin: 18px 0;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    transition: .4s;
+
+    box-shadow:
+        0 10px 30px rgba(111,81,72,.04);
+}
+
+.quest:hover {
+
+    transform:
+        translateX(7px)
+        rotate(-.5deg);
+
+    border-color: var(--pink);
+
+    box-shadow:
+        0 15px 35px rgba(111,81,72,.09);
+}
+
+.quest-title {
+
+    font-size: 23px;
+}
+
+.quest-subtitle {
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    margin-top: 6px;
+
+    color: #a38a80;
+}
+
+.answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition:
+        max-height .7s ease,
+        opacity .7s ease;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    color: var(--soft-brown);
+}
+
+.quest.open .answer {
+
+    max-height: 300px;
+
+    opacity: 1;
+
+    margin-top: 18px;
+}
+
+/* --------------------
+   POLAROIDS
+-------------------- */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px,1fr));
+
+    gap: 35px;
+
+    margin-top: 60px;
+}
+
+.polaroid {
+
+    background: white;
+
+    padding: 10px 10px 30px;
+
+    box-shadow:
+        0 15px 30px rgba(111,81,72,.10);
+
+    transition: .5s;
+
+    transform: rotate(-3deg);
+}
+
+.polaroid:nth-child(even) {
+
+    transform: rotate(3deg);
+}
+
+.polaroid:hover {
+
+    transform:
+        translateY(-12px)
+        rotate(0deg)
+        scale(1.03);
+
+}
+
+.polaroid img {
+
+    width: 100%;
+
+    aspect-ratio: 1/1;
+
+    object-fit: cover;
+
+    filter:
+        sepia(.12)
+        saturate(.85)
+        contrast(.95);
+}
+
+.polaroid p {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+    color: var(--brown);
+}
+
+/* --------------------
+   SONG
+-------------------- */
+
+.song-card {
+
+    margin-top: 50px;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #f8e8df
+        );
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(111,81,72,.10);
+}
+
+.song-disc {
+
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff 0 8%,
+            var(--rose) 9% 12%,
+            #d89a9d 13% 35%,
+            #b96f73 36% 100%
+        );
+
+    animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.song-card h3 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    font-weight: 400;
+}
+
+.song-card p {
+
+    margin: 8px 0 20px;
+
+    color: var(--soft-brown);
+}
+
+.song-button {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background: var(--rose);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    transition: .3s;
+}
+
+.song-button:hover {
+
+    transform: scale(1.05);
+}
+
+/* --------------------
+   FINAL
+-------------------- */
+
+.final {
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #f6e4d6,
+            var(--cream) 55%
+        );
+}
+
+.final-heart {
+
+    font-size: 60px;
+
+    color: var(--rose);
+
+    animation: heartbeat 1.8s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.final h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(50px, 9vw, 90px);
+
+    font-weight: 400;
+
+    margin: 30px 0;
+}
+
+.final p {
+
+    max-width: 620px;
+
+    margin: auto;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: var(--soft-brown);
+}
+
+/* --------------------
+   SCROLL REVEAL
+-------------------- */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.reveal.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* --------------------
+   MUSIC / SONG BUTTON
+-------------------- */
+
+.song-floating {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    z-index: 100;
+
+    background: white;
+
+    border: 1px solid #ead9cb;
+
+    color: var(--rose);
+
+    padding: 12px 15px;
+
+    border-radius: 50px;
+
+    font-family: "DM Mono", monospace;
+
+    font-size: 9px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(111,81,72,.10);
+}
+
+/* --------------------
+   MOBILE
+-------------------- */
+
+@media(max-width:600px) {
+
+    section {
+        padding: 100px 25px;
+    }
+
+    .text {
+        font-size: 19px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .memory-note {
+        padding: 25px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+    <div class="eyebrow">
+        a little corner of the internet
+        made just for you
+    </div>
+
+    <h1>
+
+        six months
+
+        <span class="handwriting">
+            of us ♡
+        </span>
+
+    </h1>
+
+    <p class="hero-text">
+
+        Six months of memories,
+        difficult days, silly moments,
+        late conversations,
+        and somehow...
+
+        <br>
+
+        <strong>
+            still us.
+        </strong>
+
+    </p>
+
+    <a
+        href="#story"
+        class="enter-button"
+    >
+        COME INSIDE ♡
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     STORY
+========================= -->
+
+<section id="story">
+
+<div class="container reveal">
+
+    <div class="section-number">
+        01 / OUR STORY
+    </div>
+
+    <h2 class="title">
+        It wasn't always easy.
+    </h2>
+
+    <p class="text">
+
+        We didn't get the perfect,
+        effortless kind of love.
+
+        <br><br>
+
+        We got misunderstandings.
+        Hard days.
+        Moments that tested us.
+        Moments where things felt uncertain.
+
+        <br><br>
+
+        But somehow, through everything,
+
+        <br>
+
+        <span class="highlight">
+            we kept finding our way back to each other.
+        </span>
+
+        <br><br>
+
+        And that's something I'll always
+        be grateful for.
+
+    </p>
+
+    <div class="memory-note">
+
+        <small>
+            SOMETHING I NEVER WANT TO FORGET
+        </small>
+
+        <p>
+            We could have given up,
+            but we kept choosing us.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRIDE
+========================= -->
+
+<section class="pride">
+
+<div class="container reveal">
+
+    <div class="section-number">
+        02 / FOR YOU
+    </div>
+
+    <h2 class="title">
+        I'm so proud of you.
+    </h2>
+
+    <p class="text">
+
+        I hope you know that I see you.
+
+        <br><br>
+
+        I see your effort.
+        I see the things you carry.
+        I see how hard you try,
+        even when nobody else sees it.
+
+        <br><br>
+
+        And I want you to remember:
+
+        <br><br>
+
+        <span class="highlight">
+            you don't have to have
+            everything figured out
+            for me to be proud of you.
+        </span>
+
+        <br><br>
+
+        I'm proud of the person you are
+        and the person you're becoming.
+
+    </p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SUPPORT
+========================= -->
+
+<section class="support">
+
+<div class="container reveal">
+
+    <div class="section-number">
+        03 / MY PROMISE
+    </div>
+
+    <h2 class="title">
+        I'll be beside you.
+    </h2>
+
+    <p class="text">
+
+        I can't promise that every day
+        will be perfect.
+
+        <br><br>
+
+        But I can promise that I'll
+        keep believing in you.
+
+        <br><br>
+
+        I'll celebrate your wins.
+
+        I'll listen when things get heavy.
+
+        I'll remind you of your strength
+        when you forget it.
+
+        <br><br>
+
+        And I'll keep supporting
+        the dreams you're chasing.
+
+        <br><br>
+
+        <span class="highlight">
+            You don't have to face
+            everything alone.
+        </span>
+
+    </p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUESTS
+========================= -->
+
+<section class="quests">
+
+<div class="container reveal">
+
+    <div class="section-number">
+        04 / LITTLE QUESTS
+    </div>
+
+    <h2 class="title">
+        A few things
+        I never say enough.
+    </h2>
+
+    <p class="text">
+
+        There are little pieces of my heart
+        hidden inside these.
+
+        <br>
+
+        Click them one by one. ♡
+
+    </p>
+
+
+    <div class="quest">
+
+        <div class="quest-title">
+            ♡ Quest 01 — Why do I love you?
+        </div>
+
+        <div class="quest-subtitle">
+            CLICK TO UNLOCK
+        </div>
+
+        <div class="answer">
+
+            Because you're you.
+
+            <br><br>
+
+            I love your heart,
+            your little habits,
+            the way you make me laugh,
+            and the feeling of being understood
+            by you.
+
+            <br><br>
+
+            I love the ordinary moments
+            just as much as the big ones.
+
+        </div>
+
+    </div>
+
+
+    <div class="quest">
+
+        <div class="quest-title">
+            ♡ Quest 02 — What makes me stay?
+        </div>
+
+        <div class="quest-subtitle">
+            CLICK TO UNLOCK
+        </div>
+
+        <div class="answer">
+
+            The fact that underneath
+            everything life throws at us,
+
+            <br><br>
+
+            I still look at you and think:
+
+            <br><br>
+
+            <span class="highlight">
+                "It's still you."
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="quest">
+
+        <div class="quest-title">
+            ♡ Quest 03 — What am I proud of?
+        </div>
+
+        <div class="quest-subtitle">
+            CLICK TO UNLOCK
+        </div>
+
+        <div class="answer">
+
+            I'm proud of your effort.
+
+            <br><br>
+
+            Even when things don't go
+            exactly the way you wanted,
+            I see you continuing.
+
+            <br><br>
+
+            And that means more to me
+            than you probably realise.
+
+        </div>
+
+    </div>
+
+
+    <div class="quest">
+
+        <div class="quest-title">
+            ♡ Quest 04 — What do I want next?
+        </div>
+
+        <div class="quest-subtitle">
+            CLICK TO UNLOCK
+        </div>
+
+        <div class="answer">
+
+            More memories.
+
+            <br>
+
+            More random conversations.
+
+            <br>
+
+            More laughing until our stomachs hurt.
+
+            <br>
+
+            More ordinary days.
+
+            <br>
+
+            More chapters.
+
+            <br><br>
+
+            More us.
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="section-number">
+        05 / OUR LITTLE ARCHIVE
+    </div>
+
+    <h2 class="title">
+        Moments I want to keep.
+    </h2>
+
+    <p class="text">
+
+        Replace these pictures
+        with your favourite memories.
+
+    </p>
+
+
+    <div class="gallery">
+
+        <div class="polaroid">
+
+            <img src="photo1.jpg">
+
+            <p>
+                our beginning ♡
+            </p>
+
+        </div>
+
+
+        <div class="polaroid">
+
+            <img src="photo2.jpg">
+
+            <p>
+                one of my favourites
+            </p>
+
+        </div>
+
+
+        <div class="polaroid">
+
+            <img src="photo3.jpg">
+
+            <p>
+                just us
+            </p>
+
+        </div>
+
+
+        <div class="polaroid">
+
+            <img src="photo4.jpg">
+
+            <p>
+                a little memory
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     OUR SONG
+========================= -->
+
+<section>
+
+<div class="container reveal">
+
+    <div class="section-number">
+        06 / OUR SONG
+    </div>
+
+    <h2 class="title">
+        Press play when
+        you miss me.
+    </h2>
+
+
+    <div class="song-card">
+
+        <div class="song-disc"></div>
+
+        <h3>
+            My Love Mine All Mine
+        </h3>
+
+        <p>
+            Mitski
+        </p>
+
+        <a
+            class="song-button"
+            href="https://www.youtube.com/watch?v=vx4kLgnFexo"
+            target="_blank"
+        >
+            ♫ PLAY OUR SONG
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+<div class="container reveal">
+
+    <div class="final-heart">
+        ♡
+    </div>
+
+    <h2>
+        still choosing you.
+    </h2>
+
+    <p>
+
+        Six months.
+
+        <br><br>
+
+        So many memories.
+
+        So many feelings.
+
+        So many things
+        we've already been through.
+
+        <br><br>
+
+        And somehow,
+        after all of it,
+
+        <br>
+
+        <span class="highlight">
+            I'm still so happy it's you.
+        </span>
+
+        <br><br>
+
+        Thank you for staying.
+
+        <br>
+
+        Thank you for letting me love you.
+
+        <br>
+
+        Thank you for being you.
+
+        <br><br>
+
+        Happy six months,
+        my love. ♡
+
+        <br><br>
+
+        Here's to all the chapters
+        we haven't written yet.
+
+        <br><br>
+
+        <strong>
+            always us.
+        </strong>
+
+    </p>
+
+</div>
+
+</section>
+
+
+<!-- FLOATING SONG BUTTON -->
+
+<button
+    class="song-floating"
+    onclick="openSong()"
+>
+    ♫ our song
+</button>
+
+
+<script>
+
+/* --------------------
+   QUESTS
+-------------------- */
+
+document.querySelectorAll(".quest")
+.forEach(function(quest) {
+
+    quest.addEventListener("click", function() {
+
+        quest.classList.toggle("open");
+
+    });
+
+});
+
+
+/* --------------------
+   FLOATING HEARTS
+-------------------- */
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = [
+        "♡",
+        "♥",
+        "˚♡",
+        "✦",
+        "♡"
+    ];
+
+    heart.innerHTML =
+        hearts[
+            Math.floor(
+                Math.random() * hearts.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (10 + Math.random() * 14) + "px";
+
+    heart.style.animationDuration =
+        (6 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+
+        heart.remove();
+
+    }, 11000);
+
+}
+
+setInterval(createHeart, 1300);
+
+
+/* --------------------
+   SCROLL REVEAL
+-------------------- */
+
+const observer =
+    new IntersectionObserver(
+        function(entries) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target
+                        .classList
+                        .add("visible");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: .15
+        }
+    );
+
+
+document.querySelectorAll(".reveal")
+.forEach(function(element) {
+
+    observer.observe(element);
+
+});
+
+
+/* --------------------
+   OUR SONG
+-------------------- */
+
+function openSong() {
+
+    window.open(
+        "https://www.youtube.com/watch?v=vx4kLgnFexo",
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```
